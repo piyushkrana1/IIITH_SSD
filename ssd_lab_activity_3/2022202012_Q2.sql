@@ -1,0 +1,1 @@
+SELECT concat(E.Fname,E.Lname),E.Ssn,E.Dno,count(*) FROM EMPLOYEE AS E ,EMPLOYEE AS D WHERE E.Ssn=D.Super_ssn group by E.Ssn;
