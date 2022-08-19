@@ -1,0 +1,3 @@
+
+SELECT W.Essn,count(*) FROM WORKS_ON AS W WHERE W.Essn IN (SELECT D.Mgr_ssn FROM PROJECT AS P ,
+ DEPARTMENT AS D WHERE P.Dnum=D.Dnumber AND P.Pname='ProductY')
