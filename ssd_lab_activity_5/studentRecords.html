@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Record page</title>
+        <link rel="stylesheet" href="sstyle.css">
+    </head>
+
+    <body>
+        <div id="mainw">
+            <form id="addnew">
+                <input type="text" id="rollno" name="rollno" placeholder="rollno">
+                <input type="text" id="uname" name="uname" placeholder="UserName">
+    
+                <input type="submit" id="addb" value="ADD NEW" onclick="addrow()">
+            </form>
+            <table id="datatable">
+                <tr>
+                    <th>RollNo</th>
+                    <th>StudentName</th>
+                </tr>
+            </table>
+            <button type="button" id="greenb" onclick="deleterow()">
+                Delete Row
+            </button>
+        </div>
+    </body>
+        <script>
+        function addrow() {
+     c   var table = document.getElementById("datatable");
+        // var row = table.insertRow(0);
+        let len=table.rows.length;
+        let rollnov = document.getElementById("rollno").value;
+        let unamev = document.getElementById("uname").value;
+        let  ne=table.insertRow(len);
+        var cell1 = ne.insertCell(0);
+        var cell2 = ne.insertCell(1);
+        cell1.innerHTML =rollnov;
+        cell2.innerHTML =unamev;
+        
+
+        }
+        function deleterow() {
+            document.getElementById("datatable").deleteRow(1);
+        }
+        </script>
+
+
+</html>

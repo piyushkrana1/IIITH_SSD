@@ -1,0 +1,29 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(#73b2c6,#405490);
+}
+
+table ,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr:nth-child(even){
+    background-color: aquamarine;
+}
+#mainw{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#addb{
+    background-color: red;
+}
+
+#greenb{
+    background-color: green;
+}
