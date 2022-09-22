@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <table id="center">
+            <form>
+                <tr>
+                    <td><label>Manager Name</label></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label>Group Email</label></td>
+                    <td><input type="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Server username</label></td>
+                    <td><input type="text" id="servername" name="servername"  
+                    onkeyup="snamef()" pattern="(?=.*\d)(?=.*[A-Z]).*" required>
+                    </td>
+                    <td><span id ="message"></span></td>
+                </tr>
+                <tr>
+                    <td><label>server password</label></td>
+                    <td><input type="password" id="pass1" name ="pass1" required></td>
+                </tr>
+                <tr>
+                    <td><label>confirm password</label></td>
+                    <td><input type="password"  id="pass1" name="pass2" onblur="matchpass()"required></td>
+                    <td><span id ="passmessage"></span></td>
+                </tr>
+
+                <tr>
+                    <td><label>Team Lead</label></td>
+                    <td>
+                        <select name="lead" id="lead">
+                            <option value="a">A</option>
+                            <option value="b">B</option>
+                            <option value="c">C</option>
+                            <option value="d">D</option>
+                          </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </form>
+        </table>
+
+
+
+
+    </body>
+</html>
